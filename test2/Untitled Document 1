@@ -1,0 +1,19 @@
+należało w linijce 30 wpisać sizeof(int)
+dopisałem printf na rozmiar aby informował nas o wartości tej zmiennej
+przy kompilowaniu gcc rozmiar wynosił 40
+a przyu kompilowaniu g++ rozmiar wynosił 10
+po dokonaniu zmian rozmiar w obu przypadkach wynoi 40
+
+
+wynik:
+diablo-bash-3.2$ g++ -Wall -pedantic konwerter.c 
+diablo-bash-3.2$ ./a.out
+40
+Napis Latin2:  "Cze�� �wiecie!!! �ycz� mi�ego dnia."
+Napis ASCII:   "Czesc Swiecie!!! Zycze milego dnia."
+diablo-bash-3.2$ gcc -Wall -pedantic konwerter.c 
+diablo-bash-3.2$ ./a.out
+40
+Napis Latin2:  "Cze�� �wiecie!!! �ycz� mi�ego dnia."
+Napis ASCII:   "Czesc Swiecie!!! Zycze milego dnia."
+
